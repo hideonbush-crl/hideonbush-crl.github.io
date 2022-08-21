@@ -10,13 +10,65 @@
     <link rel="stylesheet" href="css/profile.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+        
+        .links-container {
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-left: 80px;
+            margin-bottom: 20px;
+          }
+    
+        .w3-webname {
+          text-align: center;
+          font-size: 5em;
+        }
+    
+        #courselii {
+    
+          width:45%;
+          height: 30%;
+        }
+    
+        .acc{
+        margin-bottom: 100px;
+       }
+       .w3-hover-opacity {
+    
+        height:150px;
+       }
+    
+       .top-login{
+        position:absolute;
+        font-size: 1.5rem;
+        top:0;
+        right:0;
+        }
 
+        .right {
+
+            float: right;
+        }
+        .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      
+        </style>
 </head>
+
 <body>
     <div class="container rounded bg-white mt-5 mb-5">
         <div class="row">
             <div class="col-md-3 border-right">
-                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"><span class="font-weight-bold">Edogaru</span><span class="text-black-50">edogaru@mail.com.my</span><span> </span></div>
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" width="150px" src="images/profile.PNG"><span class="font-weight-bold">Josh</span><span class="text-black-50">Josh@mail.com.my</span><span> </span></div>
             </div>
             <div class="col-md-5 border-right">
                 <div class="p-3 py-5">
@@ -24,26 +76,52 @@
                         <h4 class="text-right">Profile Settings</h4>
                     </div>
                     <div class="row mt-2">
-                        <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
-                        <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
+                        <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value="Josh"></div>
+                        <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="Farmer" placeholder="surname"></div>
                     </div>
                     <div class="row mt-3">
-                        <div class="col-md-12"><label class="labels">Career</label><input type="text" class="form-control" placeholder="your idea/current career" value=""></div>
-                        <div class="col-md-12"><label class="labels">Occupation</label><input type="text" class="form-control" placeholder="your idea/current occupation" value=""></div>
-                        <div class="col-md-12"><label class="labels">Personality</label><input type="text" class="form-control" placeholder="Some occupations suits your personality best." value=""></div>
+                        <div class="col-md-12"><label class="labels">Career</label><input type="text" class="form-control" placeholder="your idea/current career" value="Farmer"></div>
+                        <div class="col-md-12"><label class="labels">Occupation</label><input type="text" class="form-control" placeholder="your idea/current occupation" value="Farmer"></div>
+                        <div class="col-md-12"><label class="labels">Personality</label><input type="text" class="form-control" placeholder="Some occupations suits your personality best." value="Like to learn digital business"></div>
                     </div>
 
 
                     <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button">Save Profile</button></div>
+
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-3 py-5">
                     <div class="d-flex justify-content-between align-items-center experience"><span><h4>Ongoing Courses</h4></span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i></span></div><br>
-
-                    <div class="d-flex justify-content-between align-items-center experience"><span><h4>Completed Courses</h4></span><span class="border px-3 p-1 add-experience"><i class="fa fa-plus"></i></span></div><br>
+                    <div id="courselii" class="w3-third w3-container right">
+                        <img src="images/db6173276069c8ba60eb4d3de3c29a4.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                          <p>Excel Skills</p>
+                        </div>
+                      </div>
+                      <div id="courselii" class="w3-third w3-container">
+                        <img src="images/Leading the Modern Day business.png" alt="Norway" style="width:100%;" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                          <p>Modern Day business</p>
+                        </div>
+                      </div>
+                    <div class="d-flex justify-content-between align-items-center experience"><span><h4>Completed Courses</h4></span></div><br>
+                    <div id="courselii" class="w3-third w3-container right">
+                        <img src="images/5cf91fda9df64320ec1d78f0482622a.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                          <p>clinical health</p>
+                        </div>
+                      </div>
+                      <div id="courselii" class="w3-third w3-container">
+                        <img src="images/python.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                          <p>python</p>
+                        </div>
+                      </div>
                 </div>  
-            </div>
+                <div class="links-container">
+                    <i><a href="index2.html" class="w3-button w3-hover-blue w3-large w3-black" style="width: 350px;" target="_blank"></i>Back to main page</a>
+                </div>
         </div>
     </div>
 
